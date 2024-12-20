@@ -54,7 +54,7 @@ const Form=()=>{
     const updatedFormData = { ...formData, doj: formattedDate };
 
     try {
-        const response = await axios.put(`http://localhost:8000/edit/${formData.eId}`, updatedFormData);
+        const response = await axios.put(`https://emp-form-backend.onrender.com/edit/${formData.eId}`, updatedFormData);
         console.log(response.data);
         alert('Employee edited successfully!');
         navigate('/employees')
