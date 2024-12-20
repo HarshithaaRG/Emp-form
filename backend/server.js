@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const app=express()
 app.use(bodyParser.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://emp-form-zbh9.onrender.com' }));
 
 const db=mysql.createConnection({
     user:process.env.DB_USER,
