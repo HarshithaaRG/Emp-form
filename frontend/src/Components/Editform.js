@@ -140,7 +140,7 @@ const Form=()=>{
 
         <div>
             <label>Role:</label>
-            <input text="text" name="role"
+            <input text="text" name="workrole"
             value={formData.workrole}
             onChange={handleChange}
             placeholder='Employee Role' required 
